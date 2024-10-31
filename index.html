@@ -242,7 +242,26 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.audio-controls {
+      margin-top: 20px;
+    }
 
+    .audio-button {
+      padding: 1px 2px;
+      font-size: 1em;
+      color: #fff;
+      background-color: #282c34;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-bottom: 100px;
+    }
+
+    .audio-button:hover {
+      background-color: #3b3f47;
+      margin-bottom: 20px;
+    }
 	</style>
 </head>
 
@@ -255,7 +274,14 @@
         
         <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
         
-        <i><b>KKN BINA DESA AIKMEL UTARA 2024</b></i>
+        <i><audio id="background-audio" autoplay muted loop>
+            <source src="Mars Desa Untuk Platform Music_052938.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung elemen audio.
+          </audio>
+        
+          <div class="audio-controls">
+            <button class="audio-button" onclick="toggleAudio()">Musik Mars Desa</button>
+          </div> </b></i>
       </div>
       
       <nav class="nav-menu float-right d-none d-lg-block">
@@ -869,7 +895,7 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>desaaikmelutara</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span><a href="https://kknaikmelutara.github.io/kknwebmain/">kkndesaaikmelutara2024</a></span></strong>. All Rights Reserved
       </div>
       
     </div>
