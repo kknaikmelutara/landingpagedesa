@@ -134,4 +134,24 @@
   });
 
 })(jQuery);
+const audio = document.getElementById("background-audio");
+    const button = document.querySelector(".audio-button");
 
+    // Menghapus mute setelah load halaman
+    document.addEventListener("DOMContentLoaded", () => {
+      audio.muted = false;
+      audio.play().catch(error => {
+        console.log("Browser memerlukan interaksi pengguna untuk memulai audio.");
+      });
+    });
+
+    // Fungsi play/pause audio
+    function toggleAudio() {
+      if (audio.paused) {
+        audio.play();
+        button.textContent = "Pause Musik";
+      } else {
+        audio.pause();
+        button.textContent = "Play Musik";
+      }
+    }
