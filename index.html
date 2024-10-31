@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Our-Compnay Associate</title>
+  <meta name="author" content="Velile Vamba">
+  <meta content="" name="lorem100">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/free.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/brand.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/flag.min.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+	<style type="text/css">
+		.carousel-item {
+		  height: 60vh;
+		  min-height: 350px;
+		  background: no-repeat center center scroll;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		}
+
+    .main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .wrap {
+  margin: 2rem;
+
+  transform-style: preserve-3d;
+  transform: perspective(100rem);
+
+  cursor: pointer;
+}
+
+.main .container {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+ 
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(32, 57, 84));
+  background-position: var(--bX) var(--bY);
+  background-size: 40rem auto;
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%);
+
+  transition: transform .6s 1s;
+}
+
+.main .container::before,
+.main .container::after {
+  content: "";
+
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #fff;
+
+  position: absolute;
+  z-index: 2;
+
+  opacity: .6;
+  transition: .3s;
+}
+
+.main .container::before {
+  top: 2rem;
+  right: 2rem;
+
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+.main .container::after {
+  bottom: 2rem;
+  left: 2rem;
+
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.main .container--active {
+  transition: none;
+}
+
+.main .container--2 {
+  filter: hue-rotate(80deg) saturate(140%);
+}
+
+.main .container--3 {
+  filter: hue-rotate(160deg) saturate(140%);
+}
+
+.main .container p {
+  color: hsla(0, 0%, 100%, .6);
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.main .wrap:hover .container::before,
+.main .wrap:hover .container::after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+}
+
+.main .abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: hsla(0, 0%, 0%);
+  font-size: 1.6rem;
+} 
+
+/*****************************************/
+.solutions {
+  /* The image used */
+  background-image: url(assets/img/slider-2.jpg);
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.solutions .wrapper{
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.solutions h1{
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  font-size: 48px;
+}
+
+.solutions .panels{
+  list-style-type: none;
+  padding: 0;
+}
+
+.solutions .panels li{
+
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+  float: left;
+}
+
+.solutions .panels li div{
+  padding: 10% 0;
+  text-align: center;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  height: 50vh;
+}
+
+/*// ANIMATION STYLES //*/
+
+.solutions .panels div.back {
+  transform: rotateY(90deg);
+}
+
+.solutions .panels div.front {
+  position: absolute;
+}
+
+.solutions .panels li:hover div.front {
+  animation: twirl 0.2s ease-in forwards;
+}
+.solutions .panels li:hover div.back {
+  animation: twirl 0.2s 0.2s ease-out forwards reverse;
+}
+
+@keyframes twirl {
+  0%{ transform: rotateY(0deg)}
+  100% {transform: rotateY(90deg)}
+}
+
+.why-us {
+  /* The image used */
+  background-image: url(assets/img/slider-2.jpg);
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+	</style>
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        
+        <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
+        
+        <i><b>KKN BINA DESA AIKMEL UTARA 2024</b></i>
+      </div>
+      
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">Sejarah Desa</a></li>
+          <li><a href="#services">Visi & Misi</a></li>
+          <li><a href="#faq">Pemerintah Desa</a></li>
+          <li><a href="#team">BPD</a></li>
+		      <li><a href="#contact">Contact Us</a></li>
+        </ul>
+            
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section >
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url(assets/img/footer-bg.png)">
+          <div class="carousel-caption">
+            <h2 class="display-4">AIKMEL UTARA BERLIAN</h2>
+            <p class="lead"><b>BERSIH</b> <b>|</b> <b>LESTARI</b> <b>|</b> <b>INDAH</b> <b>|</b> <b>AMAN</b> </p>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url(assets/img/slider-2.jpg)">
+          <div class="carousel-caption ">
+            <h2 class="display-4">Desa Aikmel Utara</h2>
+            <p class="lead">Desa Aikmel Utara adalah tempat yang bersih, lestari, indah, dan aman, menciptakan lingkungan yang nyaman dan asri bagi seluruh warganya
+            </p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url(assets/img/header.jpg)">
+          <div class="carousel-caption covid-block">
+            <h2 class="display-4">Desa Aikmel Utara</h2>
+            <p class="lead" style="background: rgba(0, 0, 0, 0.7); border-radius: 3px;">Desa Aikmel Utara terletak di Kecamatan Aikmel, Kabupaten Lombok Timur, 
+              Provinsi Nusa Tenggara Barat. Dikenal sebagai desa yang bersih, lestari, indah, dan aman, Desa Aikmel Utara menjadi tempat yang nyaman dan tenteram bagi warganya. 
+              Desa ini memiliki kekayaan alam yang melimpah dan masyarakat yang menjunjung tinggi nilai-nilai budaya serta kebersamaan.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+  </section><!-- #hero -->
+  
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2><b>Sejarah Desa</b></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/desa.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+            <h3>Sejarah Singkat Desa Aikmel Utara</h3>
+            <p class="">
+              <br>
+              <br>
+              Desa Aikmel Utara merupakan bagian dari Desa Aikmel yang dimekarkan pada tahun 1991  ,
+               dan didifinitifkan pada tahun 1994 dengan Surat Keputusan Gubernur Kepala Daerah Tingkat I Nusa Tenggara Barat Nomor.
+               31 Tahun 1994 tentang Pengukuhan Desa Persiapan Aikmel Utara Menjadi Desa Difinitif.
+            </p>
+            <p>
+              Kemudian setelah dicanangkannya pemekaran desa oleh Bupati Lombok Timur kepada desa-desa yang memenuhi persyaratan dan kelayakan mengenai
+               jumlah penduduk dan luas wilayah Sehingga Desa Aikmel Utara dimekarkan menjadi
+               3 (tiga) Desa yaitu Desa Aikmel Utara induk, Desa Toya yang mekar pada tahun 2010 berdasarkan peraturan Bupati Lombok Timur
+               Nomor 16 tanggal 21 Mei 2010  tentang Pembentukan Dua Puluh Satu Desa Persiapan Di Kabupaten Lombok Timur dan Desa Aikperapa yang mekar 
+               pada tahun 2010 berdasarkan Peraturan Bupati Lombok Timur Nomor 41 Tahun 2010 tentang Pembentukan 8 (delapan) Desa di wilayah Kabupaten Lombok Timur.
+            </p>
+            <p>
+             
+            </p>
+            
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Visi & Misi</h2>
+          <p><b>Visi</b><br>
+            Visi adalah suatu gambaran cita – cita atau impian yang dicapai dalam jangka waktu 
+            6 (enam) tahun (2021 - 2027) dengan mempertimbangkan kekuatan dan potensi yang ada.</p>
+            <p><br>
+              Visi : “Bekerja melayani masyarakat agar terbangunnya tata kelola pemerintahan yang 
+              baik dan transparan guna mewujudkan desa aikmel utara yang jujur, adil, sejahtera dan berakhlak mulia”
+            </p><br>
+            <p><center><b>Misi</b></center>
+        </div>
+        <center><p>Mewujudkan pemerintahan Desa yang Jujur dan Transparan dengan berupaya melibatkan seluruh komponen masyarakat 
+          baik dalam proses perencanaan dan pelaksanaan.</p></center>
+        <center><p>Melayani bidang pemerintahan Desa dengan baik, Cepat dan Tepat
+          ( PELAYANAN SUPER ) dengan memamfaatkan Sistem Informasi Desa.</p></center>
+        <center><p>Melaksanakan Program Pembangunan secara Adil dan Merata dengan memberdayakan serta mengikutsertakan Masyarakat dalam pelaksanaan proyek desa.</p></center>
+        <center><p>mengedepankan Musyawarah dan Mupakat dalam kehidupan sehari - hari baik dengan pemerintahan maupun masyarakat.</p></center>
+        <center><p>Meningkatkan profesionalitas dan mengaktifkan seluruh perangkat Desa sesuai tupoksi masing - masing.</p></center>
+        <center><p>Meningkatkan Perekonomian dan kesejahteraan masyarakat lewat sektor pertanian,peternakan dan perikanan dan potensi Desa yang ada.</p></center>
+        <center><p>Pengadaan Ambulance Desa sebagai salah satu upaya untuk meningkatkan Pelayanan kesehatan Masyarakat.</p></center>
+        <center><p>Menciptakan kondisi Masyarakat yang tertib dan AMAN.</p></center>
+        <center><p>Meningkatkan pendapatan Desa melalui BUMDES yang maju dan produktif.</p></center>
+        <center><p>Menyediakan Ruang bagi masyarakat yang memberi saran, kritik demi kemajuan Desa.</p></center>
+        <center><p>Program Kegiatan Prioritas berdasarkan Visi Misi Kepala Desa.</p></center>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section class="call-to-action">
+      <div class="container">
+        
+        <div class="text-center">
+          
+        <div class="section-title">
+          <h2 style="color: #fff;">Lembaga Masyarakat</h2>
+        </div>
+
+          <p>Lembaga masyarakat di desa adalah organisasi atau kelompok yang berperan dalam membantu pemerintah desa
+             menjalankan berbagai program dan kegiatan yang mendukung kesejahteraan warga.</p>
+
+<div class="container-fluid">
+  <div class="col-md-12">
+      <div class="row main">
+          <div class="wrap wrap--3 col-md-3">
+            <h6 style="color: #fff; text-align: center;">PKK Desa Aikmel Utara</h6>
+              <div class="container container--3 ">
+                  <p>PKK (Pemberdayaan Kesejahteraan Keluarga) adalah organisasi masyarakat yang berfokus pada pemberdayaan keluarga, kesejahteraan ibu, dan anak. Melalui program-program seperti pelatihan keterampilan, 
+                    kesehatan ibu dan anak, pendidikan, serta ekonomi keluarga, PKK membantu meningkatkan kualitas hidup keluarga di tingkat desa.</p>
+              </div>
+            </div>
+          
+            <div class="wrap wrap--3  col-md-3">
+              <h6 style="color: #fff; text-align: center;">Kader Posyandu Desa Aikmel Utara</h6>
+              <div class="container container--3 ">
+		<p>
+      Lembaga Kader Posyandu adalah relawan terlatih yang berperan penting dalam program kesehatan di Posyandu. Anggota masyarakat setempat, terutama ibu-ibu, berkomitmen untuk meningkatkan kesehatan keluarga dan komunitas melalui penyuluhan dan pemeriksaan kesehatan ibu dan anak.
+    </p>
+              </div>
+            </div>
+          
+            <div class="wrap wrap--3 col-md-3">
+              <h6 style="color: #fff; text-align: center;">LPM Desa Aikmel Utara</h6>
+              <div class="container container--3 ">
+                <p>
+                  Lembaga Pemberdayaan Masyarakat (LPM) adalah organisasi yang berperan dalam pemberdayaan masyarakat di desa. LPM mengembangkan potensi lokal melalui program-program di bidang ekonomi, pendidikan, dan sosial, serta mendorong partisipasi aktif masyarakat dalam perencanaan dan pelaksanaan pembangunan.
+                </p>
+            
+              </div>
+            </div>
+            <div class="wrap wrap--3 col-md-3">
+              <h6 style="color: #fff; text-align: center;">KARANG TARUNA MUNCAR KENCANA</h6>
+              <div class="container container--3 ">
+                <p>
+                  Karang Taruna adalah organisasi kepemudaan di tingkat desa yang berfokus pada pengembangan potensi pemuda. Mereka mengadakan berbagai kegiatan sosial, budaya, dan olahraga, serta berperan aktif dalam pemberdayaan masyarakat dan peningkatan kesejahteraan di lingkungan sekitar.
+                </p>
+            
+              </div>
+            </div>
+            <div class="wrap wrap--3 col-md-3">
+              <h6 style="color: #fff; text-align: center;">BKD</h6>
+              <div class="container container--3 ">
+                <p>
+                  Badan Keamanan Desa adalah organisasi yang bertugas menjaga keamanan dan ketertiban di lingkungan desa. Mereka bekerja sama dengan masyarakat dan pemerintah desa untuk mencegah tindakan kriminal, menjaga stabilitas, serta menciptakan lingkungan yang aman dan damai bagi warga desa.
+                </p>
+            
+              </div>
+            </div>
+      </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+
+    <section id="faq" class="solutions">
+      <div class="wrapper">
+        <h1>Pemerintah Desa</h1>
+        <ul class="panels">
+          <div class="row">
+          <li class="col-md-4">
+            <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-bottom: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+              <h6></h6>
+              
+                <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                  <img src="assets/img/lotim.jpeg" alt="Problem Image" style="width: 100%; height: auto; max-width: 150px; border-radius: 0px;">
+              </div>
+        
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>Patuh  Karya</h6>
+               prinsip yang mengutamakan kedisiplinan dan integritas dalam setiap karya yang dihasilkan.
+                Melalui Patuh Karya, kita diajak untuk bekerja dengan tanggung jawab, menjaga kualitas, 
+                serta mematuhi aturan demi menghasilkan hasil terbaik yang bermanfaat.
+            </p>
+            </div>
+          </li><br>
+          <li class="col-md-4">
+            <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-top: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+              <h6>Kepala Desa<br>Aikmel Utara </h6>
+                <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                  <img src="assets/img/kades.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 550px; border-radius: 0px;">
+              </div>
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>Kepala Desa</h6>
+              <p>
+                Kepala desa memiliki peran penting dalam mengelola pemerintahan dan mengembangkan potensi desa. Sebagai pemimpin masyarakat, 
+                kepala desa bertanggung jawab untuk meningkatkan kesejahteraan warga, menjalin kerjasama, 
+                serta mengimplementasikan program-program yang mendukung pembangunan berkelanjutan dan partisipatif.
+              </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+              <h6></h6>
+                <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                  <img src="assets/img/ntb.png" alt="Problem Image" style="width: 100%; height: auto; max-width: 150px; border-radius: 0px;">
+              </div>
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>NTB Transparan</h6>
+              <p>
+                NTB Transparan adalah inisiatif untuk mendorong akuntabilitas dan keterbukaan dalam pemerintahan. Melalui NTB Transparan, 
+                masyarakat dapat mengakses informasi publik dengan mudah, memastikan partisipasi aktif dalam pengawasan, serta mendukung 
+                pembangunan yang lebih baik dan berkelanjutan di Nusa Tenggara Barat
+              </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-top: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+              <h6>Kasi<br>Pemerintahan</h6>
+                <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                  <img src="assets/img/pemerintahan.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 550px; border-radius: 0px;">
+              </div>
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>Kasi Pemerintahan</h6>
+              <p>
+                Kasi pemerintahan berperan penting dalam pelaksanaan program-program desa, memastikan bahwa kebijakan 
+                pemerintah pusat dan daerah diimplementasikan dengan baik. Ia juga bertanggung jawab mengkoordinasikan kegiatan pemerintahan, 
+                serta memberikan arahan dan bimbingan kepada perangkat desa dalam pelayanan masyarakat
+              </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-top: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+              <h6>Sekertaris Desa<br>Aikmel Utara</h6>
+                <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                  <img src="assets/img/sekdes.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 550px; border-radius: 0px;">
+              </div>
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>Sekertaris Desa</h6>
+              <p>
+                Sekretaris desa adalah pegawai yang membantu kepala desa dalam administrasi dan pengelolaan kegiatan pemerintahan. 
+                Tugasnya mencakup pengarsipan dokumen, penyusunan laporan, serta menjalin komunikasi antara pemerintah desa dan masyarakat,
+                 memastikan transparansi dan efisiensi dalam pelayanan publik.
+              </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-top: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+              <h6>Kaur<br>Keuangan</h6>
+                <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                  <img src="assets/img/keuangan.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 550px; border-radius: 0px;">
+              </div>
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>Kaur Keuangan</h6>
+              <p>
+                Kaur keuangan bertanggung jawab mengelola semua aspek keuangan desa, termasuk penyusunan anggaran, pencatatan transaksi,
+                 dan pelaporan keuangan. Perannya sangat penting untuk memastikan
+                 transparansi dan akuntabilitas dalam penggunaan anggaran, serta mendukung pembangunan yang berkelanjutan di desa.
+              </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-top: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+              <h6>Kaur<br>Perencanaan</h6>
+                <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                  <img src="assets/img/perencanaan.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 550px; border-radius: 0px;">
+              </div>
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>Kaur Perencanaan</h6>
+              <p>
+                Kaur perencanaan memiliki tugas vital dalam menyusun rencana pembangunan desa, mengidentifikasi kebutuhan masyarakat, 
+                dan merumuskan program yang sesuai. Dengan perencanaan yang matang, kaur perencanaan berkontribusi untuk mencapai 
+                tujuan pembangunan yang berkelanjutan dan meningkatkan kesejahteraan warga desa.
+              </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-top: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+              <h6>Kasi<br>Pelayanan</h6>
+              <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                <img src="assets/img/pelayanan.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 550px; border-radius: 0px;">
+            </div>
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>Kasi Pelayanan</h6>
+              <p>
+                Kasi pelayanan bertanggung jawab untuk memastikan bahwa masyarakat menerima layanan yang berkualitas dan tepat waktu. 
+                Tugasnya meliputi pengelolaan administrasi, penyuluhan, dan penanganan keluhan warga,
+                 sehingga meningkatkan kepuasan masyarakat terhadap pelayanan publik di desa.
+              </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-top: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+              <h6>Kasi<br>Kesejahteraan</h6>
+                <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                  <img src="assets/img/kesejateraan.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 550px; border-radius: 0px;">
+              </div>
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>Kasi kesejateraan</h6>
+              <p>
+                Kasi kesejahteraan berperan penting dalam merancang dan melaksanakan program-program yang meningkatkan kualitas hidup masyarakat. 
+                Tugasnya mencakup pengelolaan bantuan sosial, pelatihan keterampilan,
+                 dan program kesehatan, sehingga dapat meningkatkan kesejahteraan dan mengurangi angka kemiskinan di desa.
+              </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-top: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+              <h6>Kaur<br>TU/UMUM</h6>
+                <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                  <img src="assets/img/tu.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 550px; border-radius: 0px;">
+              </div>
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>Kaur TU</h6>
+              <p>
+                Kaur TU (Tata Usaha) bertanggung jawab dalam pengelolaan administrasi desa, termasuk pengarsipan dokumen dan penyusunan laporan.
+                 Perannya sangat penting untuk menjaga kelancaran administrasi,
+                 memastikan komunikasi yang efektif antara perangkat desa dan masyarakat, serta mendukung kegiatan pemerintahan.
+              </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-top: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+              <h6>Kawil<br>Dasan Lian Leuk</h6>
+                <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                  <img src="assets/img/kawil lauk.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 140px; border-radius: 0px;">
+              </div>
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>TUGAS DAN FUNGSI</h6>
+              <p>
+                Kawil Dasan Lian Leuk memiliki peran strategis dalam menghubungkan masyarakat dengan pemerintahan desa. Tugasnya mencakup pengawasan pembangunan, 
+                pengumpulan aspirasi warga, serta memastikan program-program desa berjalan efektif, demi meningkatkan kesejahteraan dan kemajuan komunitas di wilayahnya.
+              </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-top: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+              <h6>Kawil<br>Dasan Lian Daya</h6>
+                <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                  <img src="assets/img/kawil daya.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 550px; border-radius: 0px;">
+              </div>
+            </div>
+            <div class="back" style="background: #020a20">
+              <h6>TUGAS DAN FUNGSI</h6>
+              <p>
+                Kawil Dasan Lian Daya memiliki peran strategis dalam menghubungkan masyarakat dengan pemerintahan desa. Tugasnya mencakup pengawasan pembangunan, pengumpulan aspirasi warga,
+                 serta memastikan program-program desa berjalan efektif, demi meningkatkan kesejahteraan dan kemajuan komunitas di wilayahnya.
+              </p>
+            </div>
+          </li>
+          <li class="col-md-4">
+            <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-top: 80px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+              <h6>Kawil<br>Dasan Lian Barat</h6>
+                <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                  <img src="assets/img/kawil barat.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 550px; border-radius: 0px;">
+              </div>
+            </div>
+            <div class="back" style="background: #020a20;margin-top:80px;">
+              <h6>TUGAS DAN FUNGSI</h6>
+              <p>
+                Kawil Dasan Lian Barat memiliki peran strategis dalam menghubungkan masyarakat dengan pemerintahan desa. Tugasnya mencakup pengawasan pembangunan, pengumpulan aspirasi warga, 
+                serta memastikan program-program desa berjalan efektif, demi meningkatkan kesejahteraan dan kemajuan komunitas di wilayahnya.
+              </p>
+            </div>
+          </li>
+        </li>
+        <li class="col-md-4">
+          <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-top: 80px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+            <h6>Kawil<br>Karang Petak</h6>
+              <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+                <img src="assets/img/kawil petak.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 550px; border-radius: 0px;">
+            </div>
+          </div>
+          <div class="back" style="background: #020a20;margin-top:80px;">
+            <h6>TUGAS DAN FUNGSI</h6>
+            <p>
+              Kawil Karang Petak memiliki peran strategis dalam menghubungkan masyarakat dengan pemerintahan desa. Tugasnya mencakup pengawasan pembangunan, pengumpulan aspirasi warga,
+               serta memastikan program-program desa berjalan efektif, demi meningkatkan kesejahteraan dan kemajuan komunitas di wilayahnya.
+            </p>
+          </div>
+        </li>
+      </li>
+      <li class="col-md-4">
+        <div class="front" style="background: #203954; border: 2px solid #ffffff; padding: 20px;margin-left: 100px;margin-top: 80px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 15px;">
+          <h6>Kawil<br> Dasan Lian Timuk</h6>
+            <div class="image-container" style="text-align: center; margin-bottom: 10px;">
+              <img src="assets/img/kawil timuk.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 550px; border-radius: 0px;">
+          </div>
+        </div>
+        <div class="back" style="background: #020a20;margin-top:80px;">
+          <h6>TUGAS DAN FUNGSI</h6>
+          <p>
+            Kawil Dasan Lian Timuk memiliki peran strategis dalam menghubungkan masyarakat dengan pemerintahan desa. Tugasnya mencakup pengawasan pembangunan, pengumpulan aspirasi warga, serta memastikan program-program desa berjalan efektif, demi meningkatkan kesejahteraan dan kemajuan komunitas di wilayahnya.
+          </p>
+        </div>
+      </li>
+    </div>
+    </li>
+        </div>
+        
+         
+        </ul>
+      </div>
+    </section>
+<!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" style="text-align: center;">
+      <div class="section-title">
+        <h2>BPD Aikmel Utara</h2>
+      </div>
+
+        <p>Badan Permusyawaratan Desa “BPD” merupakan lembaga perwujudan demokrasi dalam penyelenggaraan pemerintahan desa, BPD dapat dianggap sebagai “parlemen”-nya desa, BPD merupakan lembaga baru di desa pada era otonomi daerah di Indonesia. Sesuai dengan fungsinya, maka BPD ini dapat dikatakan 
+          sebagai lembaga kemasyarakatan. Karena berkisar pada pemikiran pokok yang dalam kesadaran masyarakat. hal ini sejalan dengan ungkapan Soekanto “2004:219”</p>
+          <p>Anggota BPD ialah wakil dari penduduk desa bersangkutan berdasarkan keterwakilan wilayah yang ditetapkan dengan cara musyawarah dan mufakat. Aanggota BPD terdiri dari ketua Rukun Warga, pemangku adat, golongan profesi, pemuka agama dan tokoh atau pemuka masyarakat lainnya. Masa jabatan
+             anggota BPD ialah 6 tahun dan dapat diangkut/diusulkan kembali untuk satu kali masa jabatan berikutnya. Pimpinan dan Anggota BPD tidak diperbolehkan merangkap jabatan sebagai Kapala Desa dan Perangkat Desa.</p>
+             <h3>Daftar Nama dan Jabatan</h3>
+             <center><table>
+                 <thead>
+                     <tr>
+                         <th>Nama</th>
+                         <th>Alamat</th>
+                         <th>Jabatan</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td>Drs. H. SULAIMAN, MA</td>
+                         <td>Dasan Lian Timuk</td>
+                         <td>Ketua</td>
+                     </tr>
+                     <tr>
+                         <td>MUHAMMAD TANWIR, SH</td>
+                         <td>Dasan Lian Timuk</td>
+                         <td>Wakil Ketua</td>
+                     </tr>
+                     <tr>
+                         <td>AHMAD MUZAMMIL HADI, SSTP </td>
+                         <td>Dasan Lian Barat</td>
+                         <td>Sekretaris</td>
+                     </tr>
+                     <tr>
+                         <td>NUKMAN</td>
+                         <td>Dasan Lian Lauk</td>
+                         <td>Anggota</td>
+                     </tr>
+                     <tr>
+                         <td>AHMAD </td>
+                         <td>Dasan Lian Daya</td>
+                         <td>Anggota</td>
+                     </tr>
+                     <tr>
+                         <td>H. AGUS SUBANDI</td>
+                         <td>Dasan Lian Daya</td>
+                         <td>Anggota</td>
+                     </tr>
+                     <tr>
+                         <td>MUSTAMIN</td>
+                         <td>Karang Petak</td>
+                         <td>Anggota</td>
+                     </tr>
+                 </tbody>
+             </table></center>
+       
+      </div>
+    </section><!-- End Our Team Section -->
+
+    <section id="" class="why-us" style="color: #fff;">
+      <div class="container" style="text-align: center;">
+        <div class="section-title">
+          <h2 style=" color: #fff;">Prestasi Nasional <br>Desa Aikmel Utara</h2>
+        </div>
+          <p><b>Desa Aikmel Utara, letaknya tidak jauh dari Kecamatan Aikmel. Desa ini salah satu desa berprestasi di Lotim. Prestasi membanggakan, 
+            karena mampu menjadi juara dua lomba desa tingkat nasional mewakili regional Nusa Tenggara Barat dari empat regional yang digelar Kementerian Dalam Negeri</b></p>
+            <br>
+            <p>baca berita selengkapnya Klik <a href="https://radarlombok.co.id/desa-aikmel-utara-juara-lomba-desa-tingkat-nasional.html">disini </a></p>
+  <div class="text-center"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button></div>
+ 
+  <div class="collapse" id="collapseExample">
+    <div class="col-lg-5 col-md-12">
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <div class="form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+          <div class="validate"></div>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+          <div class="validate"></div>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please tell us why you need a demo" placeholder="Message"></textarea>
+          <div class="validate"></div>
+        </div>
+        <div class="text-center"><button class="btn btn-info" type="submit">Send Request</button></div>
+      </form>
+    </div>
+  </div>
+      </div>
+    </section>
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="contact-about">
+              <h3>Aikmel Utara Berlian</h3>
+              <p><b>BERSIH</b> <b>|</b> <b>LESTARI</b> <b>|</b> <b>INDAH</b> <b>|</b> <b>AMAN</b></p>
+              <div>
+                <i class="icofont-instagram"></i>
+                <a href="https://www.instagram.com/desa_aikmelutara94/">Instagram </a>
+              </div>
+              <div>
+                <i class="icofont-facebook"></i>
+                <a href="https://www.facebook.com/SIDAikmelUtara/">Facebook </a>
+              </div>
+              <div>
+                <i class="icofont-youtube"></i>
+                <a href="https://www.youtube.com/@aikmelutara7266">Youtube </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info">
+              <div>
+                <i class="icofont-google-map"></i>
+                <p><a href="https://www.google.com/maps/place/Kantor+Desa+Aikmel+Utara/@-8.5533567,116.5151243,17z/data=!3m1!4b1!4m6!3m5!1s0x2dcc3601110e327d:0xd0ca3f60c21468d9!8m2!3d-8.5533567!4d116.5176992!16s%2Fg%2F11hb5_69rx?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D">Location : </a>kecamatan Aikmel, kabupaten Lombok Timur, provinsi Nusa Tenggara Barat, Indonesia.</p>
+              </div>
+
+              <div>
+                <i class="icofont-simple-up"></i>
+                <p><a href = "https://desaaikmelutara.web.id/"><b>Web Desa Aikmel Utara</b></a> </p>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div>
+            <img src="assets/img/header1.jpg" alt="Problem Image" style="width: 100%; height: auto; max-width: 400px; border-radius: 0px;">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+   
+    <!-- ======= Map Section ======= -->
+    <section class="map">
+<iframe src="https://maps.google.com/maps?q=Kantor+Desa+Aikmel+Utara&t=&z=15&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>	</section><!-- End Map Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>desaaikmelutara</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
